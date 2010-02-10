@@ -1,6 +1,6 @@
 //
 //  SimonGame.m
-//  Simon Asserts
+//  Simon Classic
 //
 //  Created by Michael on 2/9/10.
 //  Copyright 2010 Michael Sanders. All rights reserved.

@@ -1,6 +1,6 @@
-## Simon Asserts
+## Simon Classic
 
-Simon Asserts is a greatly simplified reinterpretation of the Mac OS X classic [Simon Extreme](http://richd.com/simon/) for the iPhone, which in turn is a reinterpretation of the classic 1978 Milton Bradley game [Simon](http://en.wikipedia.org/wiki/Simon_(game)).
+Simon Classic is a greatly simplified reinterpretation of the Mac OS X classic [Simon Extreme](http://richd.com/simon/) for the iPhone, which in turn is a reinterpretation of the classic 1978 Milton Bradley game [Simon](http://en.wikipedia.org/wiki/Simon_(game)).
 
 ## Directions
 You already know this. Watch and listen to the buttons as they flash, and repeat them back in the same order.
@@ -17,4 +17,4 @@ iPhone app by [Michael Sanders](http://github.com/msanders).
 
 ## License
 
-Simon Asserts is released under the terms of the [Attribution-NonCommercial-ShareAlike](http://creativecommons.org/licenses/by-nc-sa/1.0/) license, in accordance with Simon Extreme.
+Simon Classic is released under the terms of the [Attribution-NonCommercial-ShareAlike](http://creativecommons.org/licenses/by-nc-sa/1.0/) license, in accordance with Simon Extreme.

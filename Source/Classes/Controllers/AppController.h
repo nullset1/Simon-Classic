@@ -1,6 +1,6 @@
 //
 //  AppController.h
-//  Simon Asserts
+//  Simon Classic
 //
 //  Created by Michael on 2/8/10.
 //  Copyright Michael Sanders 2010. All rights reserved.
