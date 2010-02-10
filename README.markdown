@@ -12,8 +12,12 @@ You already know this. Watch and listen to the buttons as they flash, and repeat
 ## Credit
 
 Original graphics by [Rich Dellinger](http://richd.com).
+
 Original OS X app by [John Scalo](http://lumacode.com).
+
 iPhone app by [Michael Sanders](http://github.com/msanders).
+
+Partially translated using [my gengo: ![myGengo | Simple human translation](http://ogneg.com/images/banners/affiliate/150x38_1.gif)](http://mygengo.com/a/d7bb3).
 
 ## License
 
