@@ -119,10 +119,10 @@
                                                     kSimonYellowButton + 1);
     [currentSequence addObject:[NSNumber numberWithChar:nextButton]];
 
-    // Calculate decent wait interval between 800 and 400 milliseconds,
+    // Calculate decent wait interval between 800 and 450 milliseconds,
     // depending on the length of the sequence.
     NSTimeInterval decentWaitInterval = 0.8 - ([currentSequence count] * 0.05);
-    if (decentWaitInterval < 0.4) decentWaitInterval = 0.4;
+    if (decentWaitInterval < 0.45) decentWaitInterval = 0.45;
 
     [delegate playSequence:currentSequence
                 atInterval:decentWaitInterval
