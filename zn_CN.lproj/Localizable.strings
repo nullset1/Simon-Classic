@@ -2,9 +2,9 @@
    Localizable.strings
    Simon Classic
 
-   Created by Michael on 2/9/10.
+   Created by Michael on 2/10/10.
    Copyright 2010 Michael Sanders. All rights reserved.
  */
 
-"Score" = "Mejor";
-"Best" = "Resultado";
+"Score" = "分数";
+"Best" = "最高分";
