@@ -2,7 +2,7 @@
 //  FlurryAPI.h
 //  Flurry iPhone Analytics Agent
 //
-//  Copyright 2009 Flurry, Inc. All rights reserved.
+//  Copyright 2009 Flurry, Inc.
 //
 #import <UIKit/UIKit.h>
 
