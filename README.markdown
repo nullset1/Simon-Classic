@@ -6,8 +6,8 @@ Simon Classic is a greatly simplified reinterpretation of the Mac OS X classic [
 You already know this. Watch and listen to the buttons as they flash, and repeat them back in the same order.
 
 ## Screenshots
-![Main](http://cloud.github.com/downloads/msanders/Simon-Asserts/screenshot-main.png)
-![Glow](http://cloud.github.com/downloads/msanders/Simon-Asserts/screenshot-glow.png)
+![Main](http://cloud.github.com/downloads/msanders/Simon-Classic/screenshot-main.png)
+![Glow](http://cloud.github.com/downloads/msanders/Simon-Classic/screenshot-glow.png)
 
 ## Credit
 
@@ -17,7 +17,7 @@ Original OS X app by [John Scalo](http://lumacode.com).
 
 iPhone app by [Michael Sanders](http://github.com/msanders).
 
-Partially translated using [my gengo: ![myGengo | Simple human translation](http://ogneg.com/images/banners/affiliate/150x38_1.gif)](http://mygengo.com/a/d7bb3).
+Partially translated using [myGengo: ![myGengo | Simple human translation](http://ogneg.com/images/banners/affiliate/150x38_1.gif)](http://mygengo.com/a/d7bb3).
 
 ## License
 
