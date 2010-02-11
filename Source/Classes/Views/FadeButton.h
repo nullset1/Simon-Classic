@@ -3,7 +3,7 @@
 //  TiMote
 //
 //  Created by Michael on 8/19/09.
-//  Copyright 2009 Michael Sanders. All rights reserved.
+//  Copyright 2009 Michael Sanders.
 //
 
 #import <UIKit/UIKit.h>

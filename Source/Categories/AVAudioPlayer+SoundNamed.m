@@ -3,7 +3,7 @@
 //  Simon Classic
 //
 //  Created by Michael on 2/9/10.
-//  Copyright 2010 Michael Sanders. All rights reserved.
+//  Copyright 2010 Michael Sanders.
 //
 
 #import "AVAudioPlayer+SoundNamed.h"

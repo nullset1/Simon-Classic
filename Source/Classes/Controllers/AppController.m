@@ -3,7 +3,7 @@
 //  Simon Classic
 //
 //  Created by Michael on 2/8/10.
-//  Copyright Michael Sanders 2010. All rights reserved.
+//  Copyright Michael Sanders 2010.
 //
 
 #import "AppController.h"
