@@ -62,6 +62,9 @@
 
 - (void)setPlayersTurn
 {
+    [lastMoveDate release];
+    lastMoveDate = [[NSDate alloc] init];
+
     if (![self gameOver] && gameState != kSimonGameStateIdle) {
         gameState = kSimonGameStatePlayerNeedsToStart;
     }
