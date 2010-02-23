@@ -25,6 +25,8 @@
 		0E389F0D1133B331000CAB51 /* marimba_red.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F091133B331000CAB51 /* marimba_red.caf */; };
 		0E389F0E1133B331000CAB51 /* marimba_blue.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F0A1133B331000CAB51 /* marimba_blue.caf */; };
 		0E389F0F1133B331000CAB51 /* marimba_green.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F0B1133B331000CAB51 /* marimba_green.caf */; };
+		0E389F161133B508000CAB51 /* LosslessSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E389F151133B508000CAB51 /* LosslessSound.m */; };
+		0E389F2A1133B80B000CAB51 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E389F291133B80B000CAB51 /* AudioToolbox.framework */; };
 		0E4BC595113247A000DDD591 /* SoundPrefKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC594113247A000DDD591 /* SoundPrefKeys.m */; };
 		0E4BC5A511324C9700DDD591 /* GameOverSounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC5A411324C9700DDD591 /* GameOverSounds.m */; };
 		0E4BC7EA11339E0500DDD591 /* IFChoiceCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7DA11339E0500DDD591 /* IFChoiceCellController.m */; };
@@ -51,15 +53,12 @@
 		0E775A031122187E0017B13A /* SoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7759F71122187E0017B13A /* SoundButton.m */; };
 		0E775A041122187E0017B13A /* deadbeef_rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E7759FA1122187E0017B13A /* deadbeef_rand.c */; };
 		0E775A051122187E0017B13A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7759FC1122187E0017B13A /* main.m */; };
-		0E775B2011223BBB0017B13A /* AVAudioPlayer+SoundNamed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E775B1F11223BBB0017B13A /* AVAudioPlayer+SoundNamed.m */; };
-		0E775B3E112241E80017B13A /* AVAudioPlayer+PlayOrRestart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E775B3D112241E80017B13A /* AVAudioPlayer+PlayOrRestart.m */; };
 		0E775BA3112250630017B13A /* FadeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E775BA2112250630017B13A /* FadeButton.m */; };
 		0E775BAC1122520B0017B13A /* Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E775BAB1122520B0017B13A /* Transitions.m */; };
 		0E775D0D11227FB90017B13A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D0C11227FB90017B13A /* UIKit.framework */; };
 		0E775D1111227FC60017B13A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D1011227FC60017B13A /* Foundation.framework */; };
 		0E775D6311227FD00017B13A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D6211227FD00017B13A /* CoreFoundation.framework */; };
 		0E775D6711227FD80017B13A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D6611227FD80017B13A /* QuartzCore.framework */; };
-		0E775D6B11227FE00017B13A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D6A11227FE00017B13A /* AVFoundation.framework */; };
 		0E775D7211227FFF0017B13A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D7111227FFF0017B13A /* CoreGraphics.framework */; };
 		0E775D851122809F0017B13A /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D841122809F0017B13A /* libFlurry.a */; };
 		0E775D93112287E50017B13A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E775D92112287E50017B13A /* Default.png */; };
@@ -92,6 +91,9 @@
 		0E389F091133B331000CAB51 /* marimba_red.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = marimba_red.caf; sourceTree = "<group>"; };
 		0E389F0A1133B331000CAB51 /* marimba_blue.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = marimba_blue.caf; sourceTree = "<group>"; };
 		0E389F0B1133B331000CAB51 /* marimba_green.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = marimba_green.caf; sourceTree = "<group>"; };
+		0E389F141133B508000CAB51 /* LosslessSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LosslessSound.h; sourceTree = "<group>"; };
+		0E389F151133B508000CAB51 /* LosslessSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LosslessSound.m; sourceTree = "<group>"; };
+		0E389F291133B80B000CAB51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0E4BC593113247A000DDD591 /* SoundPrefKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPrefKeys.h; sourceTree = "<group>"; };
 		0E4BC594113247A000DDD591 /* SoundPrefKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPrefKeys.m; sourceTree = "<group>"; };
 		0E4BC5A311324C9700DDD591 /* GameOverSounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverSounds.h; sourceTree = "<group>"; };
@@ -136,10 +138,6 @@
 		0E7759FC1122187E0017B13A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E7759FE1122187E0017B13A /* Simon_Classic_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Simon_Classic_Prefix.pch; path = ../Simon_Classic_Prefix.pch; sourceTree = "<group>"; };
 		0E775A0E112219030017B13A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E775B1E11223BBB0017B13A /* AVAudioPlayer+SoundNamed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+SoundNamed.h"; sourceTree = "<group>"; };
-		0E775B1F11223BBB0017B13A /* AVAudioPlayer+SoundNamed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+SoundNamed.m"; sourceTree = "<group>"; };
-		0E775B3C112241E80017B13A /* AVAudioPlayer+PlayOrRestart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+PlayOrRestart.h"; sourceTree = "<group>"; };
-		0E775B3D112241E80017B13A /* AVAudioPlayer+PlayOrRestart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+PlayOrRestart.m"; sourceTree = "<group>"; };
 		0E775BA1112250630017B13A /* FadeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeButton.h; sourceTree = "<group>"; };
 		0E775BA2112250630017B13A /* FadeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeButton.m; sourceTree = "<group>"; };
 		0E775BAA1122520B0017B13A /* Transitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transitions.h; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 		0E775D1011227FC60017B13A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E775D6211227FD00017B13A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		0E775D6611227FD80017B13A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0E775D6A11227FE00017B13A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0E775D7111227FFF0017B13A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0E775D831122809F0017B13A /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
 		0E775D841122809F0017B13A /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
@@ -166,9 +163,9 @@
 				0E775D1111227FC60017B13A /* Foundation.framework in Frameworks */,
 				0E775D6311227FD00017B13A /* CoreFoundation.framework in Frameworks */,
 				0E775D6711227FD80017B13A /* QuartzCore.framework in Frameworks */,
-				0E775D6B11227FE00017B13A /* AVFoundation.framework in Frameworks */,
 				0E775D7211227FFF0017B13A /* CoreGraphics.framework in Frameworks */,
 				0E775D851122809F0017B13A /* libFlurry.a in Frameworks */,
+				0E389F2A1133B80B000CAB51 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +345,6 @@
 				0E7759EB1122187E0017B13A /* NSTimer+ScheduledTimer.m */,
 				0E7759EC1122187E0017B13A /* FadeButton+TapButton.h */,
 				0E7759ED1122187E0017B13A /* FadeButton+TapButton.m */,
-				0E775B1E11223BBB0017B13A /* AVAudioPlayer+SoundNamed.h */,
-				0E775B1F11223BBB0017B13A /* AVAudioPlayer+SoundNamed.m */,
-				0E775B3C112241E80017B13A /* AVAudioPlayer+PlayOrRestart.h */,
-				0E775B3D112241E80017B13A /* AVAudioPlayer+PlayOrRestart.m */,
 				0E2DB2E2112FE75B0074BF21 /* UIViewController+ModalToolbar.h */,
 				0E2DB2E3112FE75B0074BF21 /* UIViewController+ModalToolbar.m */,
 			);
@@ -388,6 +381,8 @@
 				0E4BC594113247A000DDD591 /* SoundPrefKeys.m */,
 				0E4BC5A311324C9700DDD591 /* GameOverSounds.h */,
 				0E4BC5A411324C9700DDD591 /* GameOverSounds.m */,
+				0E389F141133B508000CAB51 /* LosslessSound.h */,
+				0E389F151133B508000CAB51 /* LosslessSound.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -435,9 +430,9 @@
 		0E775D0111227F5B0017B13A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E389F291133B80B000CAB51 /* AudioToolbox.framework */,
 				0E775D821122809F0017B13A /* FlurryLib */,
 				0E775D7111227FFF0017B13A /* CoreGraphics.framework */,
-				0E775D6A11227FE00017B13A /* AVFoundation.framework */,
 				0E775D6611227FD80017B13A /* QuartzCore.framework */,
 				0E775D6211227FD00017B13A /* CoreFoundation.framework */,
 				0E775D1011227FC60017B13A /* Foundation.framework */,
@@ -576,8 +571,6 @@
 				0E775A031122187E0017B13A /* SoundButton.m in Sources */,
 				0E775A041122187E0017B13A /* deadbeef_rand.c in Sources */,
 				0E775A051122187E0017B13A /* main.m in Sources */,
-				0E775B2011223BBB0017B13A /* AVAudioPlayer+SoundNamed.m in Sources */,
-				0E775B3E112241E80017B13A /* AVAudioPlayer+PlayOrRestart.m in Sources */,
 				0E775BA3112250630017B13A /* FadeButton.m in Sources */,
 				0E775BAC1122520B0017B13A /* Transitions.m in Sources */,
 				0E2DB255112FD66F0074BF21 /* SimonSettingsViewController.m in Sources */,
@@ -591,6 +584,7 @@
 				0E4BC7ED11339E0500DDD591 /* IFNamedImage.m in Sources */,
 				0E4BC7EF11339E0500DDD591 /* IFGenericTableViewController.m in Sources */,
 				0E4BC7F111339E0500DDD591 /* IFPreferencesModel.m in Sources */,
+				0E389F161133B508000CAB51 /* LosslessSound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

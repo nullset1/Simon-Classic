@@ -10,7 +10,7 @@
 #import "SimonViewController.h"
 #import "SimonGame.h"
 
-@class AVAudioPlayer;
+@class LosslessSound;
 @interface AppController : NSObject <UIApplicationDelegate,
                                      SimonViewControllerDelegate,
                                      SimonGameDelegate>
@@ -22,7 +22,7 @@
     SimonGame *simonGame;
     NSUInteger highscore;
     BOOL gamePending;
-    AVAudioPlayer *gameOverSound;
+    LosslessSound *gameOverSound;
 }
 
 - (IBAction)tappedSimonButton:(SoundButton *)sender;

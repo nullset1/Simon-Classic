@@ -9,8 +9,7 @@
 #import "AppController.h"
 #import "SimonGame.h"
 #import "FadeButton+TapButton.h"
-#import "AVAudioPlayer+SoundNamed.h"
-#import "AVAudioPlayer+PlayOrRestart.h"
+#import "LosslessSound.h"
 #import "FlurryAPI.h"
 #import "SimonViewController.h"
 #import "SoundPrefKeys.h"
@@ -77,14 +76,10 @@ NSString * const highscoreKey = @"HighScore";
         [userDefaults setObject:gameOverSoundName forKey:gameOverSoundKey];
     }
 
-    NSError *error = nil;
-    gameOverSound = [[AVAudioPlayer alloc] initWithSoundNamed:gameOverSoundName
-                                                       ofType:@"caf"
-                                                        error:&error];
+    gameOverSound = [[LosslessSound alloc] initWithSoundNamed:gameOverSoundName
+                                                       ofType:@"caf"];
     if (gameOverSound == nil) {
-        NSLog(@"Could not load sound %@: %@", gameOverSoundName, error);
-    } else {
-        [gameOverSound prepareToPlay];
+        NSLog(@"Could not load sound %@: %@", gameOverSoundName);
     }
 }
 
@@ -277,10 +272,9 @@ NSString * const highscoreKey = @"HighScore";
     // Tap all buttons at once.
     for (SoundButton *button in [simonViewController simonButtons]) {
         [button visuallyTapFor:0.5 fadeOutDelay:1.0f];
-        [button stopSound];
     }
 
-    [gameOverSound playOrRestart];
+    [gameOverSound play];
 
     // Allow a new game in 3 seconds.
     if (!gamePending) {

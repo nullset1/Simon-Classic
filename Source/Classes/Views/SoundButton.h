@@ -9,16 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "FadeButton.h"
 
-@class AVAudioPlayer;
+@class LosslessSound;
 @interface SoundButton : FadeButton
 {
-    AVAudioPlayer *sound;
+    LosslessSound *sound;
 }
 
-- (void)setSoundToFileInBundle:(NSString *)soundFile
-                        ofType:(NSString *)type;
-- (void)removeSound;
+- (void)setSoundToFileInBundle:(NSString *)soundFile ofType:(NSString *)type;
 - (void)playSound;
-- (void)stopSound;
+- (void)removeSound;
 
 @end

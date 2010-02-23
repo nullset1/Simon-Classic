@@ -7,10 +7,26 @@
 //
 
 #import "SoundButton.h"
-#import "AVAudioPlayer+SoundNamed.h"
-#import "AVAudioPlayer+PlayOrRestart.h"
+#import "LosslessSound.h"
 
 @implementation SoundButton
+
+- (void)setSoundToFileInBundle:(NSString *)soundFile ofType:(NSString *)type
+{
+    [self removeSound];
+
+    // Create the new sound.
+    sound = [[LosslessSound alloc] initWithSoundNamed:soundFile
+                                               ofType:type];
+    if (sound == nil) {
+        NSLog(@"Could not load sound file: %@", soundFile);
+    }
+}
+
+- (void)playSound
+{
+    [sound play];
+}
 
 - (void)removeSound
 {
@@ -18,37 +34,9 @@
     sound = nil;
 }
 
-- (void)setSoundToFileInBundle:(NSString *)soundFile
-                        ofType:(NSString *)type
-{
-    [self removeSound];
-
-    // Create the new sound.
-    NSError *error = nil;
-    sound = [[AVAudioPlayer alloc] initWithSoundNamed:soundFile
-                                               ofType:type
-                                                error:&error];
-    if (sound == nil) {
-        NSLog(@"Could not load sound: %@", error);
-    }
-}
-
-- (void)playSound
-{
-    [sound playOrRestart];
-}
-
-- (void)stopSound
-{
-    if ([sound isPlaying]) {
-        [sound pause];
-        [sound setCurrentTime:0.0];
-    }
-}
-
 - (void)dealloc
 {
-    [sound release];
+    [self removeSound];
     [super dealloc];
 }
 
