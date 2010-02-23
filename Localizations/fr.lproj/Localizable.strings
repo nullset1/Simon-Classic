@@ -1,0 +1,23 @@
+﻿/*
+   Localizable.strings
+   French version
+   Simon Classic
+
+   Created by Michael on 2/9/10.
+   Copyright 2010 Michael Sanders. All rights reserved.
+ */
+
+"Score" = "Pointage";
+"Best" = "Meilleur";
+"Settings" = "Réglages";
+
+"Back" = "Retour";
+
+"ButtonSounds" = "Souton Sonore";
+"Default" = "Défaut";
+"Marimba" = "Marimba";
+
+"GameOverSound" = "Partie Terminée Sonore";
+"Vortex" = "Vortex";
+"SadTrombone" = "Triste Trombone";
+"LosingHorns" = "L’épopée Échoue";

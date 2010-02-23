@@ -17,6 +17,8 @@ Original graphics by [Rich Dellinger](http://richd.com).
 
 Original OS X app by [John Scalo](http://lumacode.com).
 
+Original code for `IFGenericTableView` classes (used in the Settings) by [Craig Hockenberry](http://furbo.org/2009/04/30/matt-gallagher-deserves-a-medal/).
+
 iPhone app by [Michael Sanders](http://github.com/msanders).
 
 Partially translated using [myGengo: ![myGengo | Simple human translation](http://ogneg.com/images/banners/affiliate/150x38_1.gif)](http://mygengo.com/a/d7bb3).

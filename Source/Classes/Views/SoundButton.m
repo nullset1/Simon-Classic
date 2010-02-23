@@ -12,14 +12,25 @@
 
 @implementation SoundButton
 
+- (void)removeSound
+{
+    [sound release];
+    sound = nil;
+}
+
 - (void)setSoundToFileInBundle:(NSString *)soundFile
                         ofType:(NSString *)type
 {
+    [self removeSound];
+
     // Create the new sound.
-    [sound release];
+    NSError *error = nil;
     sound = [[AVAudioPlayer alloc] initWithSoundNamed:soundFile
                                                ofType:type
-                                                error:NULL];
+                                                error:&error];
+    if (sound == nil) {
+        NSLog(@"Could not load sound: %@", error);
+    }
 }
 
 - (void)playSound

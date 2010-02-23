@@ -65,7 +65,7 @@ typedef enum {
 @property (nonatomic, assign) id <SimonGameDelegate> delegate;
 @property (nonatomic, readonly) BOOL gameOver;
 
-// Creates new simon game (but does not start it).
+// Creates new Simon game (but does not start it).
 // If |maxDelay| seconds elapse between a move, the player automatically
 // loses; set maxWaitInterval to <= 0.0 to allow an infinite interval.
 - (id)initWithDelegate:(id <SimonGameDelegate>)delegate
@@ -78,9 +78,10 @@ typedef enum {
 - (void)setPlayersTurn;
 
 // Notifies that the player pressed the given button.
-// Ignored if it is not the player's turn.
+// Causes game over if it is not the player's turn.
 - (void)playerPressedButton:(SimonButtonType)buttonType;
 
+// Forces Simon game to be over, and sends GameOver message to delegate.
 - (void)forceGameOver;
 
 @end
