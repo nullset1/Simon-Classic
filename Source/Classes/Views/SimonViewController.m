@@ -41,7 +41,7 @@ NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
     [yellowButton setHighlightedImage:[UIImage imageNamed:@"yellow-lit.png"]];
 
     [settingsButton setTitle:NSLocalizedString(@"Settings", nil)];
-    [playButton setTitle:NSLocalizedString(@"NewGame", nil)];
+    [playButton setTitle:NSLocalizedString(@"Play", nil)];
 
     simonButtons = [[NSArray alloc] initWithObjects:greenButton,
                                                     redButton,

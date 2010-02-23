@@ -430,8 +430,8 @@
 		0E775D0111227F5B0017B13A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E389F291133B80B000CAB51 /* AudioToolbox.framework */,
 				0E775D821122809F0017B13A /* FlurryLib */,
+				0E389F291133B80B000CAB51 /* AudioToolbox.framework */,
 				0E775D7111227FFF0017B13A /* CoreGraphics.framework */,
 				0E775D6611227FD80017B13A /* QuartzCore.framework */,
 				0E775D6211227FD00017B13A /* CoreFoundation.framework */,

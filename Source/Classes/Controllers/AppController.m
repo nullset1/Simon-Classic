@@ -282,7 +282,7 @@ NSString * const highscoreKey = @"HighScore";
 
         UIBarButtonItem *playButton = [simonViewController playButton];
         [playButton setEnabled:NO];
-        [playButton setTitle:NSLocalizedString(@"NewGame", nil)];
+        [playButton setTitle:NSLocalizedString(@"Play", nil)];
 
         [self performSelector:@selector(allowNewGame)
                    withObject:nil
