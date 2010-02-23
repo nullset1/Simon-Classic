@@ -13,7 +13,6 @@
 #import "IFGenericTableViewController.h"
 
 #import "IFCellController.h"
-#import "IFTextViewTableView.h"
 
 // NOTE: this code requires iPhone SDK 2.2. If you need to use it with SDK 2.1, you can enable
 // it here. The table view resizing isn't very smooth, but at least it works :-)
@@ -225,26 +224,6 @@
 - (void)validate:(id)sender
 {
 	[self.navigationController popViewControllerAnimated:YES];
-}
-
-- (void)loadView
-{
-#if 0
-	// NOTE: This code circumvents the normal loading of the UITableView and replaces it with an instance
-	// of IFTextViewTableView (which includes a workaround for the hit testing problems in a UITextField.)
-	// Check the header file for IFTextViewTableView to see why this is important.
-	//
-	// Since there is no style accessor on UITableViewController (to obtain the value passed in with the
-	// initWithStyle: method), the value is hard coded for this use case. Too bad.
-
-	self.view = [[[IFTextViewTableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped] autorelease];
-	[(IFTextViewTableView *)self.view setDelegate:self];
-	[(IFTextViewTableView *)self.view setDataSource:self];
-	[self.view setAutoresizesSubviews:YES];
-	[self.view setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
-#else
-	[super loadView];
-#endif
 }
 
 - (void)viewWillAppear:(BOOL)animated
