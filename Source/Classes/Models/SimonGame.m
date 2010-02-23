@@ -132,6 +132,10 @@
     [delegate playSequence:currentSequence
                 atInterval:decentWaitInterval
                    forGame:self];
+
+    // Avoid bug where gameover occurs if move took too long.
+    [lastMoveDate release];
+    lastMoveDate = nil;
 }
 
 // Resets game to idle state.
