@@ -108,13 +108,13 @@ NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
 - (void)setSoundsOfPrefix:(NSString *)prefix
 {
     [greenButton setSoundToFileInBundle:[prefix stringByAppendingString:@"green"]
-                                 ofType:@"mp3"];
+                                 ofType:@"caf"];
     [redButton setSoundToFileInBundle:[prefix stringByAppendingString:@"red"]
-                               ofType:@"mp3"];
+                               ofType:@"caf"];
     [blueButton setSoundToFileInBundle:[prefix stringByAppendingString:@"blue"]
-                                ofType:@"mp3"];
+                                ofType:@"caf"];
     [yellowButton setSoundToFileInBundle:[prefix stringByAppendingString:@"yellow"]
-                                  ofType:@"mp3"];
+                                  ofType:@"caf"];
 }
 
 - (void)setSimonButtonSoundSet:(NSString *)soundSet

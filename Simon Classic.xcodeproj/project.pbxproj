@@ -14,19 +14,19 @@
 		0E2DB2EE112FEDB60074BF21 /* SimonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DB2ED112FEDB60074BF21 /* SimonViewController.m */; };
 		0E2DB2F1112FF6CD0074BF21 /* Simon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2DB2F0112FF6CD0074BF21 /* Simon.xib */; };
 		0E389EBC1133AA51000CAB51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E389EBA1133AA51000CAB51 /* Localizable.strings */; };
+		0E389EF41133B093000CAB51 /* gameover_sadtrombone.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389EF11133B093000CAB51 /* gameover_sadtrombone.caf */; };
+		0E389EF51133B093000CAB51 /* gameover_losinghorns.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389EF21133B093000CAB51 /* gameover_losinghorns.caf */; };
+		0E389EF61133B093000CAB51 /* gameover_vortex.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389EF31133B093000CAB51 /* gameover_vortex.caf */; };
+		0E389F041133B19F000CAB51 /* default_green.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F001133B19F000CAB51 /* default_green.caf */; };
+		0E389F051133B19F000CAB51 /* default_blue.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F011133B19F000CAB51 /* default_blue.caf */; };
+		0E389F061133B19F000CAB51 /* default_red.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F021133B19F000CAB51 /* default_red.caf */; };
+		0E389F071133B19F000CAB51 /* default_yellow.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F031133B19F000CAB51 /* default_yellow.caf */; };
+		0E389F0C1133B331000CAB51 /* marimba_yellow.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F081133B331000CAB51 /* marimba_yellow.caf */; };
+		0E389F0D1133B331000CAB51 /* marimba_red.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F091133B331000CAB51 /* marimba_red.caf */; };
+		0E389F0E1133B331000CAB51 /* marimba_blue.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F0A1133B331000CAB51 /* marimba_blue.caf */; };
+		0E389F0F1133B331000CAB51 /* marimba_green.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F0B1133B331000CAB51 /* marimba_green.caf */; };
 		0E4BC595113247A000DDD591 /* SoundPrefKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC594113247A000DDD591 /* SoundPrefKeys.m */; };
 		0E4BC5A511324C9700DDD591 /* GameOverSounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC5A411324C9700DDD591 /* GameOverSounds.m */; };
-		0E4BC62E113260D000DDD591 /* default_blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC61F113260D000DDD591 /* default_blue.mp3 */; };
-		0E4BC62F113260D000DDD591 /* default_green.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC620113260D000DDD591 /* default_green.mp3 */; };
-		0E4BC630113260D000DDD591 /* default_red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC621113260D000DDD591 /* default_red.mp3 */; };
-		0E4BC631113260D000DDD591 /* default_yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC622113260D000DDD591 /* default_yellow.mp3 */; };
-		0E4BC6D811333ED700DDD591 /* gameover_losinghorns.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC6D711333ED700DDD591 /* gameover_losinghorns.mp3 */; };
-		0E4BC6DB11333FCF00DDD591 /* gameover_sadtrombone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC6DA11333FCF00DDD591 /* gameover_sadtrombone.mp3 */; };
-		0E4BC6DD1133400000DDD591 /* gameover_vortex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC6DC1133400000DDD591 /* gameover_vortex.mp3 */; };
-		0E4BC703113341FA00DDD591 /* marimba_blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC6FF113341FA00DDD591 /* marimba_blue.mp3 */; };
-		0E4BC704113341FA00DDD591 /* marimba_green.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC700113341FA00DDD591 /* marimba_green.mp3 */; };
-		0E4BC705113341FA00DDD591 /* marimba_red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC701113341FA00DDD591 /* marimba_red.mp3 */; };
-		0E4BC706113341FA00DDD591 /* marimba_yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC702113341FA00DDD591 /* marimba_yellow.mp3 */; };
 		0E4BC7EA11339E0500DDD591 /* IFChoiceCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7DA11339E0500DDD591 /* IFChoiceCellController.m */; };
 		0E4BC7EB11339E0500DDD591 /* IFChoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7DC11339E0500DDD591 /* IFChoiceTableViewController.m */; };
 		0E4BC7EC11339E0500DDD591 /* IFControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7DE11339E0500DDD591 /* IFControlTableViewCell.m */; };
@@ -81,21 +81,21 @@
 		0E389EC71133AAEA000CAB51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizations/es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0E389EC81133AAEC000CAB51 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Localizations/ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0E389ECB1133AB0B000CAB51 /* zn_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zn_CN; path = Localizations/zn_CN.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0E389EF11133B093000CAB51 /* gameover_sadtrombone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover_sadtrombone.caf; sourceTree = "<group>"; };
+		0E389EF21133B093000CAB51 /* gameover_losinghorns.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover_losinghorns.caf; sourceTree = "<group>"; };
+		0E389EF31133B093000CAB51 /* gameover_vortex.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover_vortex.caf; sourceTree = "<group>"; };
+		0E389F001133B19F000CAB51 /* default_green.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_green.caf; sourceTree = "<group>"; };
+		0E389F011133B19F000CAB51 /* default_blue.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_blue.caf; sourceTree = "<group>"; };
+		0E389F021133B19F000CAB51 /* default_red.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_red.caf; sourceTree = "<group>"; };
+		0E389F031133B19F000CAB51 /* default_yellow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_yellow.caf; sourceTree = "<group>"; };
+		0E389F081133B331000CAB51 /* marimba_yellow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = marimba_yellow.caf; sourceTree = "<group>"; };
+		0E389F091133B331000CAB51 /* marimba_red.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = marimba_red.caf; sourceTree = "<group>"; };
+		0E389F0A1133B331000CAB51 /* marimba_blue.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = marimba_blue.caf; sourceTree = "<group>"; };
+		0E389F0B1133B331000CAB51 /* marimba_green.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = marimba_green.caf; sourceTree = "<group>"; };
 		0E4BC593113247A000DDD591 /* SoundPrefKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPrefKeys.h; sourceTree = "<group>"; };
 		0E4BC594113247A000DDD591 /* SoundPrefKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPrefKeys.m; sourceTree = "<group>"; };
 		0E4BC5A311324C9700DDD591 /* GameOverSounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverSounds.h; sourceTree = "<group>"; };
 		0E4BC5A411324C9700DDD591 /* GameOverSounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverSounds.m; sourceTree = "<group>"; };
-		0E4BC61F113260D000DDD591 /* default_blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default_blue.mp3; sourceTree = "<group>"; };
-		0E4BC620113260D000DDD591 /* default_green.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default_green.mp3; sourceTree = "<group>"; };
-		0E4BC621113260D000DDD591 /* default_red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default_red.mp3; sourceTree = "<group>"; };
-		0E4BC622113260D000DDD591 /* default_yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default_yellow.mp3; sourceTree = "<group>"; };
-		0E4BC6D711333ED700DDD591 /* gameover_losinghorns.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover_losinghorns.mp3; sourceTree = "<group>"; };
-		0E4BC6DA11333FCF00DDD591 /* gameover_sadtrombone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover_sadtrombone.mp3; sourceTree = "<group>"; };
-		0E4BC6DC1133400000DDD591 /* gameover_vortex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover_vortex.mp3; sourceTree = "<group>"; };
-		0E4BC6FF113341FA00DDD591 /* marimba_blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marimba_blue.mp3; sourceTree = "<group>"; };
-		0E4BC700113341FA00DDD591 /* marimba_green.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marimba_green.mp3; sourceTree = "<group>"; };
-		0E4BC701113341FA00DDD591 /* marimba_red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marimba_red.mp3; sourceTree = "<group>"; };
-		0E4BC702113341FA00DDD591 /* marimba_yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marimba_yellow.mp3; sourceTree = "<group>"; };
 		0E4BC7D811339E0500DDD591 /* IFCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFCellController.h; sourceTree = "<group>"; };
 		0E4BC7D911339E0500DDD591 /* IFChoiceCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFChoiceCellController.h; sourceTree = "<group>"; };
 		0E4BC7DA11339E0500DDD591 /* IFChoiceCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFChoiceCellController.m; sourceTree = "<group>"; };
@@ -196,10 +196,10 @@
 		0E4BC61E113260D000DDD591 /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				0E4BC61F113260D000DDD591 /* default_blue.mp3 */,
-				0E4BC620113260D000DDD591 /* default_green.mp3 */,
-				0E4BC621113260D000DDD591 /* default_red.mp3 */,
-				0E4BC622113260D000DDD591 /* default_yellow.mp3 */,
+				0E389F001133B19F000CAB51 /* default_green.caf */,
+				0E389F011133B19F000CAB51 /* default_blue.caf */,
+				0E389F021133B19F000CAB51 /* default_red.caf */,
+				0E389F031133B19F000CAB51 /* default_yellow.caf */,
 			);
 			name = Default;
 			path = Marimba;
@@ -208,9 +208,9 @@
 		0E4BC628113260D000DDD591 /* Game Over */ = {
 			isa = PBXGroup;
 			children = (
-				0E4BC6DC1133400000DDD591 /* gameover_vortex.mp3 */,
-				0E4BC6D711333ED700DDD591 /* gameover_losinghorns.mp3 */,
-				0E4BC6DA11333FCF00DDD591 /* gameover_sadtrombone.mp3 */,
+				0E389EF11133B093000CAB51 /* gameover_sadtrombone.caf */,
+				0E389EF21133B093000CAB51 /* gameover_losinghorns.caf */,
+				0E389EF31133B093000CAB51 /* gameover_vortex.caf */,
 			);
 			path = "Game Over";
 			sourceTree = "<group>";
@@ -229,10 +229,10 @@
 		0E4BC6FD113341EA00DDD591 /* Marimba */ = {
 			isa = PBXGroup;
 			children = (
-				0E4BC6FF113341FA00DDD591 /* marimba_blue.mp3 */,
-				0E4BC700113341FA00DDD591 /* marimba_green.mp3 */,
-				0E4BC701113341FA00DDD591 /* marimba_red.mp3 */,
-				0E4BC702113341FA00DDD591 /* marimba_yellow.mp3 */,
+				0E389F081133B331000CAB51 /* marimba_yellow.caf */,
+				0E389F091133B331000CAB51 /* marimba_red.caf */,
+				0E389F0A1133B331000CAB51 /* marimba_blue.caf */,
+				0E389F0B1133B331000CAB51 /* marimba_green.caf */,
 			);
 			name = Marimba;
 			sourceTree = "<group>";
@@ -545,20 +545,20 @@
 				0E1A794B11229C4400A17ECA /* Entitlements.plist in Resources */,
 				0E2DB25A112FD7AE0074BF21 /* bg.png in Resources */,
 				0E2DB2F1112FF6CD0074BF21 /* Simon.xib in Resources */,
-				0E4BC62E113260D000DDD591 /* default_blue.mp3 in Resources */,
-				0E4BC62F113260D000DDD591 /* default_green.mp3 in Resources */,
-				0E4BC630113260D000DDD591 /* default_red.mp3 in Resources */,
-				0E4BC631113260D000DDD591 /* default_yellow.mp3 in Resources */,
-				0E4BC6D811333ED700DDD591 /* gameover_losinghorns.mp3 in Resources */,
-				0E4BC6DB11333FCF00DDD591 /* gameover_sadtrombone.mp3 in Resources */,
-				0E4BC6DD1133400000DDD591 /* gameover_vortex.mp3 in Resources */,
-				0E4BC703113341FA00DDD591 /* marimba_blue.mp3 in Resources */,
-				0E4BC704113341FA00DDD591 /* marimba_green.mp3 in Resources */,
-				0E4BC705113341FA00DDD591 /* marimba_red.mp3 in Resources */,
-				0E4BC706113341FA00DDD591 /* marimba_yellow.mp3 in Resources */,
 				0E4BC7EE11339E0500DDD591 /* Changes.txt in Resources */,
 				0E4BC8811133A98300DDD591 /* InfoPlist.strings in Resources */,
 				0E389EBC1133AA51000CAB51 /* Localizable.strings in Resources */,
+				0E389EF41133B093000CAB51 /* gameover_sadtrombone.caf in Resources */,
+				0E389EF51133B093000CAB51 /* gameover_losinghorns.caf in Resources */,
+				0E389EF61133B093000CAB51 /* gameover_vortex.caf in Resources */,
+				0E389F041133B19F000CAB51 /* default_green.caf in Resources */,
+				0E389F051133B19F000CAB51 /* default_blue.caf in Resources */,
+				0E389F061133B19F000CAB51 /* default_red.caf in Resources */,
+				0E389F071133B19F000CAB51 /* default_yellow.caf in Resources */,
+				0E389F0C1133B331000CAB51 /* marimba_yellow.caf in Resources */,
+				0E389F0D1133B331000CAB51 /* marimba_red.caf in Resources */,
+				0E389F0E1133B331000CAB51 /* marimba_blue.caf in Resources */,
+				0E389F0F1133B331000CAB51 /* marimba_green.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
