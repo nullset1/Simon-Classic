@@ -30,7 +30,7 @@ typedef enum {
 @required
 
 // Notifies delegate the sequence is to be played.
-// Interval should be 800 and 450 milliseconds, depending on the
+// Interval should be 800 and 350 milliseconds, depending on the
 // sequence length.
 // When finished, the delegate must call -setPlayersTurn.
 - (void)playSequence:(NSArray *)sequence
