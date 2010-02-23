@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    const int retVal = UIApplicationMain(argc, argv, nil, nil);
+    const int retVal = UIApplicationMain(argc, argv, @"UIApplication", @"AppController");
     [pool release];
     return retVal;
 }

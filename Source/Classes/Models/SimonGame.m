@@ -38,6 +38,8 @@
     if (self = [super init]) {
         [self setDelegate:newDelegate];
         maxWaitInterval = maxDelay;
+        gameState = kSimonGameStateIdle;
+        gameOver = YES;
     }
     return self;
 }

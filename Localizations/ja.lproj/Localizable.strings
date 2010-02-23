@@ -1,0 +1,25 @@
+﻿/*
+   Localizable.strings
+   Japanese version
+   Simon Classic
+
+   Created by Michael on 2/10/10.
+   Copyright 2010 Michael Sanders. All rights reserved.
+ */
+
+"Score" = "得点";
+"Best" = "最高得点";
+"Settings" = "設定";
+"NewGame" = "新しいゲーム";
+"GiveUp" = "やめる";
+
+"Back" = "戻る";
+
+"ButtonSounds" = "ボタンサウンド";
+"Default" = "初期設定";
+"Marimba" = "マリンバ";
+
+"GameOverSound" = "ゲーム終了音";
+"Vortex" = "渦";
+"SadTrombone" = "悲しいトロンボーン";
+"LosingHorns" = "角笛をなくす";

@@ -1,0 +1,8 @@
+This contains classes for easily making a generic table view (e.g., the Settings).
+
+It is taken directly from this blog post http://furbo.org/2009/04/30/matt-gallagher-deserves-a-medal/, here: http://furbo.org/stuff/GenericTableViews_1.1.zip, with the following changes:
+
+- Deprecation warnings are fixed.
+- IFPreferencesModel now has a -(BOOL)changed property, which does the obvious.
+- IFChoiceTableViewController takes an NSDictionary instead of an NSArray (which is explained in the code).
+- Most classes irrelevant to Simon Classic are not here.

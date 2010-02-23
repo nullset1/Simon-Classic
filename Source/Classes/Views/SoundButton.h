@@ -17,6 +17,7 @@
 
 - (void)setSoundToFileInBundle:(NSString *)soundFile
                         ofType:(NSString *)type;
+- (void)removeSound;
 - (void)playSound;
 - (void)stopSound;
 

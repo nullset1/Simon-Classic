@@ -8,57 +8,37 @@
 
 #import "AppController.h"
 #import "SimonGame.h"
-#import "SoundButton.h"
 #import "FadeButton+TapButton.h"
 #import "AVAudioPlayer+SoundNamed.h"
 #import "AVAudioPlayer+PlayOrRestart.h"
 #import "FlurryAPI.h"
+#import "SimonViewController.h"
+#import "SoundPrefKeys.h"
+#import "GameOverSounds.h"
 
 NSString * const highscoreKey = @"HighScore";
 
 @implementation AppController
 
-@synthesize currentScoreLabel;
-@synthesize bestScoreLabel;
-
-@synthesize greenButton;
-@synthesize redButton;
-@synthesize blueButton;
-@synthesize yellowButton;
-
-- (void)awakeFromNib
+- (void)applicationDidFinishLaunching:(UIApplication *)app
 {
-    UIApplication *app = [UIApplication sharedApplication];
+    window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    simonViewController = [[SimonViewController alloc] init];
+    [simonViewController setDelegate:self];
+
+    navController =
+        [[UINavigationController alloc] initWithRootViewController:simonViewController];
+    [simonViewController release];
+
+    [navController setNavigationBarHidden:YES];
+	[window addSubview:[navController view]];
+    [window makeKeyAndVisible];
+
     [app setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
 
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [self setHighScore:[userDefaults integerForKey:highscoreKey]];
-
-    [greenButton setHighlightedImage:[UIImage imageNamed:@"green-lit.png"]];
-    [greenButton setSoundToFileInBundle:@"green" ofType:@"m4a"];
-
-    [redButton setHighlightedImage:[UIImage imageNamed:@"red-lit.png"]];
-    [redButton setSoundToFileInBundle:@"red" ofType:@"m4a"];
-
-    [blueButton setHighlightedImage:[UIImage imageNamed:@"blue-lit.png"]];
-    [blueButton setSoundToFileInBundle:@"blue" ofType:@"m4a"];
-
-    [yellowButton setHighlightedImage:[UIImage imageNamed:@"yellow-lit.png"]];
-    [yellowButton setSoundToFileInBundle:@"yellow" ofType:@"m4a"];
-
-    buttons = [[NSArray alloc] initWithObjects:greenButton, redButton,
-                                               blueButton, yellowButton, nil];
-
-    for (SoundButton *button in buttons) {
-        [button setTarget:self action:@selector(tappedButton:)];
-    }
-
-    gameOverSound = [[AVAudioPlayer alloc] initWithSoundNamed:@"gameover"
-                                                       ofType:@"m4a"
-                                                        error:NULL];
-
     simonGame = [[SimonGame alloc] initWithDelegate:self maxDelay:5.0];
-    [simonGame startNewGame];
+    [self setButtonsEnabled:NO];
 
     // Initialize Flurry analytics tracker.
     [FlurryAPI startSession:@"6X2WL9TTRI9WDP1GVTLP"];
@@ -68,8 +48,44 @@ NSString * const highscoreKey = @"HighScore";
 {
     [gameOverSound release];
     [simonGame release];
-    [buttons release];
+    [navController release];
+    [window release];
     [super dealloc];
+}
+
+- (void)reloadSounds
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+    DLog(@"Loading sounds from the user defaults");
+
+    // Configure button sounds.
+    NSString *soundSet = [userDefaults stringForKey:simonSoundSetKey];
+    if (soundSet == nil) {
+        soundSet = kSimonButtonSoundSetDefault;
+        [userDefaults setObject:soundSet forKey:simonSoundSetKey];
+    }
+    [simonViewController setSimonButtonSoundSet:soundSet];
+
+    // Configure game over sound.
+    [gameOverSound release];
+    gameOverSound = nil;
+
+    NSString *gameOverSoundName = [userDefaults stringForKey:gameOverSoundKey];
+    if (gameOverSoundName == nil) {
+        gameOverSoundName = kGameOverSoundSadTrombone;
+        [userDefaults setObject:gameOverSoundName forKey:gameOverSoundKey];
+    }
+
+    NSError *error = nil;
+    gameOverSound = [[AVAudioPlayer alloc] initWithSoundNamed:gameOverSoundName
+                                                       ofType:@"mp3"
+                                                        error:&error];
+    if (gameOverSound == nil) {
+        NSLog(@"Could not load sound %@: %@", gameOverSoundName, error);
+    } else {
+        [gameOverSound prepareToPlay];
+    }
 }
 
 - (void)setHighScore:(NSUInteger)newScore
@@ -83,7 +99,7 @@ NSString * const highscoreKey = @"HighScore";
 
     NSString *bestScoreText =
         [[NSString alloc] initWithFormat:@"%@: %d", highscoreWord, highscore];
-    [bestScoreLabel setText:bestScoreText];
+    [[simonViewController bestScoreLabel] setText:bestScoreText];
     [bestScoreText release];
 }
 
@@ -91,13 +107,13 @@ NSString * const highscoreKey = @"HighScore";
 {
     switch (buttonType) {
         case kSimonGreenButton:
-            return greenButton;
+            return [simonViewController greenButton];
         case kSimonRedButton:
-            return redButton;
+            return [simonViewController redButton];
         case kSimonBlueButton:
-            return blueButton;
+            return [simonViewController blueButton];
         case kSimonYellowButton:
-            return yellowButton;
+            return [simonViewController yellowButton];
         default:
             return nil;
     }
@@ -107,9 +123,10 @@ NSString * const highscoreKey = @"HighScore";
 
 - (void)applicationWillTerminate:(UIApplication *)app
 {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
     DLog(@"Saving highscore for next time.");
-    [[NSUserDefaults standardUserDefaults] setInteger:highscore
-                                               forKey:highscoreKey];
+    [userDefaults setInteger:highscore forKey:highscoreKey];
 
     // Log high score to Flurry.
     NSNumber *theScore = [NSNumber numberWithUnsignedInteger:highscore];
@@ -117,23 +134,50 @@ NSString * const highscoreKey = @"HighScore";
         [[NSDictionary alloc] initWithObjectsAndKeys:theScore, @"score", nil];
     [FlurryAPI logEvent:@"Highscore" withParameters:parameters];
     [parameters release];
+
+    // Log sound preferences to Flurry.
+    NSString *buttonSoundSet = [userDefaults stringForKey:simonSoundSetKey];
+    NSString *gameOverSoundName = [userDefaults stringForKey:gameOverSoundKey];
+    parameters =
+        [[NSDictionary alloc] initWithObjectsAndKeys:gameOverSoundName,
+                                                     @"Gameover Sound",
+                                                     buttonSoundSet,
+                                                     @"Button Soundset", nil];
+    [FlurryAPI logEvent:@"Sounds" withParameters:parameters];
+    [parameters release];
 }
 
 #pragma mark -
 
-#pragma mark SoundButton actions
+#pragma mark SimonViewController delegate
 
-- (IBAction)tappedButton:(SoundButton *)button
+- (void)simonViewControllerReady:(SimonViewController *)controller
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [self setHighScore:[userDefaults integerForKey:highscoreKey]];
+    [self reloadSounds];
+
+    UIBarButtonItem *playButton = [controller playButton];
+    [playButton setTarget:self];
+    [playButton setAction:@selector(tappedPlayPauseButton:)];
+}
+
+- (void)settingsChanged
+{
+    [self reloadSounds];
+}
+
+- (IBAction)tappedSimonButton:(SoundButton *)button
 {
     SimonButtonType buttonType = 0;
 
-    if (button == greenButton) {
+    if (button == [simonViewController greenButton]) {
         buttonType = kSimonGreenButton;
-    } else if (button == redButton) {
+    } else if (button == [simonViewController redButton]) {
         buttonType = kSimonRedButton;
-    } else if (button == blueButton) {
+    } else if (button == [simonViewController blueButton]) {
         buttonType = kSimonBlueButton;
-    } else if (button == yellowButton) {
+    } else if (button == [simonViewController yellowButton]) {
         buttonType = kSimonYellowButton;
     }
 
@@ -144,17 +188,30 @@ NSString * const highscoreKey = @"HighScore";
 
 #pragma mark -
 
+- (void)tappedPlayPauseButton:(UIBarButtonItem *)button
+{
+    if ([simonGame gameOver]) {
+        [button setTitle:NSLocalizedString(@"GiveUp", nil)];
+        [simonGame startNewGame];
+    } else {
+        [simonGame forceGameOver]; // Title to be changed by delegate method.
+    }
+}
+
+// Enable/disable all Simon buttons.
 - (void)setButtonsEnabled:(BOOL)enable
 {
-    for (SoundButton *button in buttons) {
+    for (SoundButton *button in [simonViewController simonButtons]) {
         [button setUserInteractionEnabled:enable];
     }
 }
 
 - (void)finishPlayingSequenceForGame:(SimonGame *)game
 {
-    [game setPlayersTurn];
-    [self setButtonsEnabled:YES];
+    if (![game gameOver]) {
+        [game setPlayersTurn];
+        [self setButtonsEnabled:YES];
+    }
 }
 
 #pragma mark SimonGame delegate
@@ -203,7 +260,7 @@ NSString * const highscoreKey = @"HighScore";
 
     NSString *newScoreText =
         [[NSString alloc] initWithFormat:@"%@: %d", scoreWord, newScore];
-    [currentScoreLabel setText:newScoreText];
+    [[simonViewController currentScoreLabel] setText:newScoreText];
     [newScoreText release];
 
     if (newScore > highscore) {
@@ -218,18 +275,23 @@ NSString * const highscoreKey = @"HighScore";
     DLog(@"We got %d point(s)!", score);
 
     // Tap all buttons at once.
-    for (SoundButton *button in buttons) {
+    for (SoundButton *button in [simonViewController simonButtons]) {
         [button visuallyTapFor:0.5 fadeOutDelay:1.0f];
         [button stopSound];
     }
 
     [gameOverSound playOrRestart];
 
-    // Start a new game in 3 seconds.
+    // Allow a new game in 3 seconds.
     if (!gamePending) {
         [self setButtonsEnabled:NO];
-        [self performSelector:@selector(restartGame:)
-                   withObject:game
+
+        UIBarButtonItem *playButton = [simonViewController playButton];
+        [playButton setEnabled:NO];
+        [playButton setTitle:NSLocalizedString(@"NewGame", nil)];
+
+        [self performSelector:@selector(allowNewGame)
+                   withObject:nil
                    afterDelay:3.0];
         gamePending = YES; // Avoid inadvertently starting multiple games.
     }
@@ -244,10 +306,10 @@ NSString * const highscoreKey = @"HighScore";
 
 #pragma mark -
 
-- (void)restartGame:(SimonGame *)game
+- (void)allowNewGame
 {
+    [[simonViewController playButton] setEnabled:YES];
     gamePending = NO;
-    [game startNewGame];
 }
 
 @end

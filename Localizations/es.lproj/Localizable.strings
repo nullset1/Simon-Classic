@@ -1,0 +1,25 @@
+﻿/*
+   Localizable.strings
+   Spanish version
+   Simon Classic
+
+   Created by Michael on 2/9/10.
+   Copyright 2010 Michael Sanders.
+ */
+
+"Score" = "Mejor";
+"Best" = "Resultado";
+"Settings" = "Ajustes";
+"NewGame" = "Juego Nuevo";
+"GiveUp" = "Rendirse";
+
+"Back" = "Atrás";
+
+"ButtonSounds" = "Sonidos de Botones";
+"Default" = "Por defecto";
+"Marimba" = "Marimba";
+
+"GameOverSound" = "Sonido de Fin de Juego";
+"Vortex" = "Remolino";
+"SadTrombone" = "Trombón Triste";
+"LosingHorns" = "Cornetas al Perder";

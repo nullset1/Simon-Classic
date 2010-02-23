@@ -7,19 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SimonViewController.h"
 #import "SimonGame.h"
 
-@class FadeButton, SoundButton, AVAudioPlayer;
-@interface AppController : NSObject <UIApplicationDelegate, SimonGameDelegate>
+@class AVAudioPlayer;
+@interface AppController : NSObject <UIApplicationDelegate,
+                                     SimonViewControllerDelegate,
+                                     SimonGameDelegate>
 {
-    UILabel *currentScoreLabel;
-    UILabel *bestScoreLabel;
-
-    NSArray *buttons; // Merely for convenience.
-    SoundButton *greenButton;
-    SoundButton *redButton;
-    SoundButton *blueButton;
-    SoundButton *yellowButton;
+    UIWindow *window;
+    UINavigationController *navController;
+    SimonViewController *simonViewController;
 
     SimonGame *simonGame;
     NSUInteger highscore;
@@ -27,15 +25,8 @@
     AVAudioPlayer *gameOverSound;
 }
 
-@property (nonatomic, assign) IBOutlet UILabel *currentScoreLabel;
-@property (nonatomic, assign) IBOutlet UILabel *bestScoreLabel;
-
-@property (nonatomic, assign) IBOutlet SoundButton *greenButton;
-@property (nonatomic, assign) IBOutlet SoundButton *redButton;
-@property (nonatomic, assign) IBOutlet SoundButton *blueButton;
-@property (nonatomic, assign) IBOutlet SoundButton *yellowButton;
-
-- (IBAction)tappedButton:(SoundButton *)sender;
+- (IBAction)tappedSimonButton:(SoundButton *)sender;
 - (void)setHighScore:(NSUInteger)score;
+- (void)setButtonsEnabled:(BOOL)enable;
 
 @end
