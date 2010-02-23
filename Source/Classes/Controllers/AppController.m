@@ -79,7 +79,7 @@ NSString * const highscoreKey = @"HighScore";
 
     NSError *error = nil;
     gameOverSound = [[AVAudioPlayer alloc] initWithSoundNamed:gameOverSoundName
-                                                       ofType:@"mp3"
+                                                       ofType:@"caf"
                                                         error:&error];
     if (gameOverSound == nil) {
         NSLog(@"Could not load sound %@: %@", gameOverSoundName, error);
