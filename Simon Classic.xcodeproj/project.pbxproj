@@ -33,7 +33,6 @@
 		0E4BC7ED11339E0500DDD591 /* IFNamedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7E011339E0500DDD591 /* IFNamedImage.m */; };
 		0E4BC7EE11339E0500DDD591 /* Changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC7E111339E0500DDD591 /* Changes.txt */; };
 		0E4BC7EF11339E0500DDD591 /* IFGenericTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7E311339E0500DDD591 /* IFGenericTableViewController.m */; };
-		0E4BC7F011339E0500DDD591 /* IFTextViewTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7E511339E0500DDD591 /* IFTextViewTableView.m */; };
 		0E4BC7F111339E0500DDD591 /* IFPreferencesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7E911339E0500DDD591 /* IFPreferencesModel.m */; };
 		0E4BC8811133A98300DDD591 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BC87F1133A98300DDD591 /* InfoPlist.strings */; };
 		0E7759D9112218760017B13A /* blue-dim.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7759C7112218760017B13A /* blue-dim.png */; };
@@ -109,8 +108,6 @@
 		0E4BC7E111339E0500DDD591 /* Changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changes.txt; sourceTree = "<group>"; };
 		0E4BC7E211339E0500DDD591 /* IFGenericTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFGenericTableViewController.h; sourceTree = "<group>"; };
 		0E4BC7E311339E0500DDD591 /* IFGenericTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFGenericTableViewController.m; sourceTree = "<group>"; };
-		0E4BC7E411339E0500DDD591 /* IFTextViewTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTextViewTableView.h; sourceTree = "<group>"; };
-		0E4BC7E511339E0500DDD591 /* IFTextViewTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTextViewTableView.m; sourceTree = "<group>"; };
 		0E4BC7E711339E0500DDD591 /* IFCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFCellModel.h; sourceTree = "<group>"; };
 		0E4BC7E811339E0500DDD591 /* IFPreferencesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFPreferencesModel.h; sourceTree = "<group>"; };
 		0E4BC7E911339E0500DDD591 /* IFPreferencesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFPreferencesModel.m; sourceTree = "<group>"; };
@@ -248,8 +245,6 @@
 				0E4BC7E611339E0500DDD591 /* Models */,
 				0E4BC7E211339E0500DDD591 /* IFGenericTableViewController.h */,
 				0E4BC7E311339E0500DDD591 /* IFGenericTableViewController.m */,
-				0E4BC7E411339E0500DDD591 /* IFTextViewTableView.h */,
-				0E4BC7E511339E0500DDD591 /* IFTextViewTableView.m */,
 			);
 			path = IFGenericTableView;
 			sourceTree = "<group>";
@@ -595,7 +590,6 @@
 				0E4BC7EC11339E0500DDD591 /* IFControlTableViewCell.m in Sources */,
 				0E4BC7ED11339E0500DDD591 /* IFNamedImage.m in Sources */,
 				0E4BC7EF11339E0500DDD591 /* IFGenericTableViewController.m in Sources */,
-				0E4BC7F011339E0500DDD591 /* IFTextViewTableView.m in Sources */,
 				0E4BC7F111339E0500DDD591 /* IFPreferencesModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
