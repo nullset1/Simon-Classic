@@ -17,7 +17,6 @@
 		0E389EF41133B093000CAB51 /* gameover_sadtrombone.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389EF11133B093000CAB51 /* gameover_sadtrombone.caf */; };
 		0E389EF51133B093000CAB51 /* gameover_losinghorns.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389EF21133B093000CAB51 /* gameover_losinghorns.caf */; };
 		0E389EF61133B093000CAB51 /* gameover_vortex.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389EF31133B093000CAB51 /* gameover_vortex.caf */; };
-		0E389F041133B19F000CAB51 /* default_green.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F001133B19F000CAB51 /* default_green.caf */; };
 		0E389F051133B19F000CAB51 /* default_blue.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F011133B19F000CAB51 /* default_blue.caf */; };
 		0E389F061133B19F000CAB51 /* default_red.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F021133B19F000CAB51 /* default_red.caf */; };
 		0E389F071133B19F000CAB51 /* default_yellow.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F031133B19F000CAB51 /* default_yellow.caf */; };
@@ -27,6 +26,7 @@
 		0E389F0F1133B331000CAB51 /* marimba_green.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389F0B1133B331000CAB51 /* marimba_green.caf */; };
 		0E389F161133B508000CAB51 /* LosslessSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E389F151133B508000CAB51 /* LosslessSound.m */; };
 		0E389F2A1133B80B000CAB51 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E389F291133B80B000CAB51 /* AudioToolbox.framework */; };
+		0E389FA61133C5D3000CAB51 /* default_green.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0E389FA51133C5D3000CAB51 /* default_green.caf */; };
 		0E4BC595113247A000DDD591 /* SoundPrefKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC594113247A000DDD591 /* SoundPrefKeys.m */; };
 		0E4BC5A511324C9700DDD591 /* GameOverSounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC5A411324C9700DDD591 /* GameOverSounds.m */; };
 		0E4BC7EA11339E0500DDD591 /* IFChoiceCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BC7DA11339E0500DDD591 /* IFChoiceCellController.m */; };
@@ -83,7 +83,6 @@
 		0E389EF11133B093000CAB51 /* gameover_sadtrombone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover_sadtrombone.caf; sourceTree = "<group>"; };
 		0E389EF21133B093000CAB51 /* gameover_losinghorns.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover_losinghorns.caf; sourceTree = "<group>"; };
 		0E389EF31133B093000CAB51 /* gameover_vortex.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover_vortex.caf; sourceTree = "<group>"; };
-		0E389F001133B19F000CAB51 /* default_green.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_green.caf; sourceTree = "<group>"; };
 		0E389F011133B19F000CAB51 /* default_blue.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_blue.caf; sourceTree = "<group>"; };
 		0E389F021133B19F000CAB51 /* default_red.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_red.caf; sourceTree = "<group>"; };
 		0E389F031133B19F000CAB51 /* default_yellow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_yellow.caf; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		0E389F141133B508000CAB51 /* LosslessSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LosslessSound.h; sourceTree = "<group>"; };
 		0E389F151133B508000CAB51 /* LosslessSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LosslessSound.m; sourceTree = "<group>"; };
 		0E389F291133B80B000CAB51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0E389FA51133C5D3000CAB51 /* default_green.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_green.caf; sourceTree = "<group>"; };
 		0E4BC593113247A000DDD591 /* SoundPrefKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPrefKeys.h; sourceTree = "<group>"; };
 		0E4BC594113247A000DDD591 /* SoundPrefKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPrefKeys.m; sourceTree = "<group>"; };
 		0E4BC5A311324C9700DDD591 /* GameOverSounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverSounds.h; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		0E4BC61E113260D000DDD591 /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				0E389F001133B19F000CAB51 /* default_green.caf */,
+				0E389FA51133C5D3000CAB51 /* default_green.caf */,
 				0E389F011133B19F000CAB51 /* default_blue.caf */,
 				0E389F021133B19F000CAB51 /* default_red.caf */,
 				0E389F031133B19F000CAB51 /* default_yellow.caf */,
@@ -546,7 +546,6 @@
 				0E389EF41133B093000CAB51 /* gameover_sadtrombone.caf in Resources */,
 				0E389EF51133B093000CAB51 /* gameover_losinghorns.caf in Resources */,
 				0E389EF61133B093000CAB51 /* gameover_vortex.caf in Resources */,
-				0E389F041133B19F000CAB51 /* default_green.caf in Resources */,
 				0E389F051133B19F000CAB51 /* default_blue.caf in Resources */,
 				0E389F061133B19F000CAB51 /* default_red.caf in Resources */,
 				0E389F071133B19F000CAB51 /* default_yellow.caf in Resources */,
@@ -554,6 +553,7 @@
 				0E389F0D1133B331000CAB51 /* marimba_red.caf in Resources */,
 				0E389F0E1133B331000CAB51 /* marimba_blue.caf in Resources */,
 				0E389F0F1133B331000CAB51 /* marimba_green.caf in Resources */,
+				0E389FA61133C5D3000CAB51 /* default_green.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
