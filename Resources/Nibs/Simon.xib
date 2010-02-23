@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="11"/>
+			<integer value="3"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -124,7 +124,7 @@
 					<object class="IBUILabel" id="204563395">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{25, 410.5}, {144, 29}}</string>
+						<string key="NSFrame">{{25, 410.5}, {135, 29}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -136,7 +136,7 @@
 						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
 							<integer value="832" key="IBUIAccessibilityTraits"/>
 						</object>
-						<string key="IBUIText">Score: 0</string>
+						<string key="IBUIText"/>
 						<object class="NSFont" key="IBUIFont" id="673298718">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">2.400000e+01</double>
@@ -153,7 +153,7 @@
 					<object class="IBUILabel" id="180448248">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{154.25, 410.5}, {139.5, 29}}</string>
+						<string key="NSFrame">{{160.5, 411}, {133, 29}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -165,7 +165,7 @@
 						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
 							<integer value="320" key="IBUIAccessibilityTraits"/>
 						</object>
-						<string key="IBUIText">Best: 0</string>
+						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="673298718"/>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
@@ -187,13 +187,11 @@
 						<object class="NSMutableArray" key="IBUIItems">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUIBarButtonItem" id="624664163">
-								<string key="IBUITitle">Settings</string>
 								<float key="IBUIWidth">1.500000e+02</float>
 								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="951363000"/>
 							</object>
 							<object class="IBUIBarButtonItem" id="609571464">
-								<string key="IBUITitle">New Game</string>
 								<float key="IBUIWidth">1.450000e+02</float>
 								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="951363000"/>
@@ -325,13 +323,13 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="951363000"/>
-							<reference ref="180448248"/>
 							<reference ref="204563395"/>
 							<reference ref="990366637"/>
 							<reference ref="648185091"/>
 							<reference ref="161625807"/>
 							<reference ref="469802587"/>
 							<reference ref="268875498"/>
+							<reference ref="180448248"/>
 						</object>
 						<reference key="parent" ref="371773842"/>
 					</object>
