@@ -21,7 +21,7 @@ Original code for `IFGenericTableView` classes (used in the Settings) by [Craig 
 
 iPhone app by [Michael Sanders](http://github.com/msanders).
 
-Partially translated using [myGengo: ![myGengo | Simple human translation](http://ogneg.com/images/banners/affiliate/150x38_1.gif)](http://mygengo.com/a/d7bb3).
+Translated using [myGengo ![myGengo | Simple human translation](http://ogneg.com/images/banners/affiliate/150x38_1.gif)](http://mygengo.com/a/d7bb3) and [OneHourTranslation ![Translation Service](http://www.onehourtranslation.com/trans/images/oht_125_125.png)](http://www.onehourtranslation.com/affiliate/msanders).
 
 ## License
 
