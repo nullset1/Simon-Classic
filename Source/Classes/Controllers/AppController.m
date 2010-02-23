@@ -151,6 +151,7 @@ NSString * const highscoreKey = @"HighScore";
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [self setHighScore:[userDefaults integerForKey:highscoreKey]];
     [self reloadSounds];
+    [self scoreChangedTo:0 forGame:simonGame];
 
     UIBarButtonItem *playButton = [controller playButton];
     [playButton setTarget:self];
