@@ -12,7 +12,7 @@
 
 @implementation IFChoiceCellController
 
-@synthesize updateTarget, updateAction;
+@synthesize updateTarget;
 @synthesize updateAction;
 @synthesize footerNote;
 @synthesize indentationLevel;
@@ -103,7 +103,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
     NSArray *possibleKeys = [choices allKeysForObject:choiceValue];
     if (possibleKeys == nil || [possibleKeys count] == 0) {
-        DLog(@"Value \"%@\" has no keys in possible choices %@", choiceValue, 
+        DLog(@"Value \"%@\" has no keys in possible choices %@", choiceValue,
                                                                  choices);
         return cell;
     }
