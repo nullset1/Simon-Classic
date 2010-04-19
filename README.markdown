@@ -3,6 +3,7 @@
 Simon Classic is a greatly simplified reinterpretation of the Mac OS X classic [Simon Extreme](http://richd.com/simon/) for the iPhone, which in turn is a reinterpretation of the classic 1978 Milton Bradley game [Simon](http://en.wikipedia.org/wiki/Simon_%28game%29).
 
 [![Available on the App Store](http://cloud.github.com/downloads/msanders/Simon-Classic/appstore.png)](http://itunes.apple.com/us/app/simon-classic/id355497080?mt=8)
+[![View on iUseThis](http://cloud.github.com/downloads/msanders/Simon-Classic/iusethis.png)](http://iphone.iusethis.com/app/simonclassic)
 
 ## Directions
 (You already know this.) Watch and listen to the buttons as they flash, and repeat them back in the same order.
